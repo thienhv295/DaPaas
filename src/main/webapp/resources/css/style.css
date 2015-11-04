@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------
+ * Name      : style.css
+ * Created   : 2015/10/14 CHJ
+ ------------------------------------------------------------ */
+
+* {margin:0; padding:0;}
+html {width:100%; height:100%; overflow-y:auto;}
+body {width:100%; height:100%; color:#555; font-size:13px; font-weight:700; font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,HelveticaDotum; line-height:18px;}
+h1,h2,h3,h4,h5,h6 {font-size:13px; text-align:left; font-weight:600;}
+img,fieldset,iframe {border:0 none; vertical-align:top;}
+ol,ul,li {list-style:none;}
+em,address {font-style:normal;}
+hr, legend, caption {display:none;}
+input, select, textarea {vertical-align:middle;}
+em,address{font-style:normal;}
+label {cursor:pointer; vertical-align:middle; outline-width:0;}
+table {width:100%; table-layout:fixed; border-collapse:collapse;}
+select, input, textarea {font-family:NanumGothic,나눔고딕,'Nanum Gothic','맑은 고딕',HelveticaNeue,DroidSans,Sans-serif,HelveticaDotum; color:#333; font-size:12px;}
+ul, li {*zoom:1;}
+ul:after, li:after {content:""; clear:both; display:block;}
+
+/* 웹폰트 CSS */
+@font-face{font-family:'Nanum Gothic'; src:url(../webfont/NanumGothic.eot);}
+@font-face{font-family:'Nanum Gothic'; src:url(../webfont/NanumGothic.woff);}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+body {background:#f7f7f9;}
+.wrap {width:980px; margin:0 auto; background:#f7f7f9;}
+#header {display:block; overflow:hidden; width:100%; height:90px; border-bottom:1px solid #ddd;}
+#content {display:block;  width:100%; padding:10px 0;}
+#footer {display:block; overflow:hidden; width:100%; height:70px; border-top:1px solid #ddd; text-align:center;}
+
+h1 {float:left; font-size:30px; margin:33px 0 0 10px;}
+.logo {float:right; margin-top:20px;}
+.logo li {float:left; margin-right:20px;}
+
+.row {margin-right:0px; margin-left:0px;}
+.col-md-6 {padding-right:0px; padding-left:0px;}
+.panel {margin:10px;}
+
+.map_area {position:relative; overflow:hidden;}
+.slider_area {position:absolute; top:0;left:0; padding:20px 10px; width:470px;  background-color:rgba(255,255,255,0.4);z-index: 1000;}
+.slider_area li {float:left; width:50%; padding:0 10px;}
+.graph_area {width:930px;min-height:360px;}
+
+.progress_tit {display:block; text-align:center; margin:15px 0 10px 0;}
+.progress {position:relative; width:220px; float:left; height:6px;}
+.progress-bar-l {position:absolute; top:0; left:0; height:6px; width:100%; }
+.progress-bar-r {position:absolute; top:0; right:0; height:6px; width:100%;}
+.line1 {border-right:1px solid #fff;}
+.line2 {border-left:1px solid #fff;}
+.tit_t {font-size:14px; color:#222;}
+.p_tit {display:inline-block; width:100%; font-size:14px; line-height:14px; margin-top:10px;}
+.p_tit div {float:left; width:50%; text-align:center; background:#c8c8c8;}
+.p_tit span {font-size:11px; color:#666; font-weight:400;}
+.p_area {display:inline-block; width:100%; padding:0 15px;}
+.p_area:hover {
+background:#f7f7f7;
+cursor: pointer !important
+}
+ .on {background:#eee;} 
+.aiq {margin:20px 0 10px 15px;}
+.color {margin-left:7px; padding:5px 10px; color:#fff; background:#ff5722; border-radius:3px; }
+
+.txt_c_y {color:#cddc39;}
+.txt_c_r {color:#ff5722;}
+.txt_c_b {color:#337ab7;}
+
+.logo3 {display:block; margin-top:16px;}
+.chart-loading {
+  	background: url("../images/ico_loading.gif") no-repeat center center;
+  	vertical-align: middle;
+  	background-size: 26px;
+  	visibility: visible;
+}
+#map-city {
+	margin: 0;
+}
+
+/* for slider */
+.ui-widget-content{
+border:0px !important;
+}
+.ui-slider-horizontal {
+   background:transparent !important ;
+    height: 0.6em !important; 
+ 	}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+border:0px !important;
+background:#009688 !important;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.35em !important;
+}
+ 
+.ui-slider .ui-slider-handle {
+    width: 1em !important;
+    height:1em !important;
+	
+}
+
+.ui-slider .ui-slider-range  { 
+	background: #009688 !important; 
+    height: .2em !important;
+
+}
+ .ui-slider.ui-slider-handle {
+ border-color: #009688 !important;
+ } 
+/*  for tooltip */
+   .ui-slider-tooltip {
+    color:#009688;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	 cursor: e-resize !important; 
+}
+.leaflet-left .leaflet-control {
+	margin-left: 0px  !important;
+	
+}
+.leaflet-top .leaflet-control {
+	margin-top: 0px !important
+}
+.leaflet-control-zoom {
+	position: absolute;
+    top: 0px;
+    left: 442px;
+    z-index: 2000;
+}
+a{
+	color:black;
+	  text-decoration: none !important;
+}
+a:hover,a:focus{
+	color:#337ab7;
+}
+.text-blue{
+color:#337ab7;	
+}
